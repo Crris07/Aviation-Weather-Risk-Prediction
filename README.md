@@ -4,7 +4,7 @@ Predict whether airport weather will become operationally unsafe within the next
 
 ## Start Here
 
-If you are viewing this on GitHub and want the recruiter-facing walkthrough, open:
+If you are viewing this on GitHub and want the walkthrough, open:
 
 - `notebooks/03_baseline.ipynb`
 
