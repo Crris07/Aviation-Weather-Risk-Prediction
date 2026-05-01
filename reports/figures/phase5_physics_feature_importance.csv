@@ -1,0 +1,9 @@
+feature,gain,split,variant,is_physics_feature
+dew_depression_x_hour_sin,29001.640308380127,139,phase5_physics,True
+dew_depression_min_6h,13183.241706848145,44,phase5_physics,True
+pressure_drop_x_wind,10278.427001953123,64,phase5_physics,True
+dew_depression_min_3h,4435.265731811523,27,phase5_physics,True
+wind_dir_sin_coastal,4241.309524536133,21,phase5_physics,True
+wind_dir_cos_coastal,1305.4915046691897,10,phase5_physics,True
+calm_and_saturated_coastal,689.1839981079102,7,phase5_physics,True
+calm_and_saturated,333.5849914550781,1,phase5_physics,True

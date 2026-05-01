@@ -1,0 +1,11 @@
+pandas>=2.1
+numpy>=1.26
+requests>=2.31
+pyarrow>=14.0
+pyyaml>=6.0
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+lightgbm>=4.1
+tqdm>=4.66
+jupyter>=1.0

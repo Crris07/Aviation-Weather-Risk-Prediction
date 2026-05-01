@@ -1,0 +1,65 @@
+# Aviation Weather Risk Prediction — project config
+
+stations:
+  train:
+    KDEN:
+      usaf: "725650"
+      wban: "03017"
+      lat: 39.8561
+      lon: -104.6737
+      elev_m: 1655
+      geography: inland
+      name: "Denver Intl"
+    KDFW:
+      usaf: "722590"
+      wban: "03927"
+      lat: 32.8998
+      lon: -97.0403
+      elev_m: 171
+      geography: inland
+      name: "Dallas–Fort Worth"
+    KSFO:
+      usaf: "724940"
+      wban: "23234"
+      lat: 37.6213
+      lon: -122.3790
+      elev_m: 4
+      geography: coastal
+      name: "San Francisco Intl"
+  test:
+    KATL:
+      usaf: "722190"
+      wban: "13874"
+      lat: 33.6367
+      lon: -84.4281
+      elev_m: 313
+      geography: inland
+      name: "Hartsfield–Jackson Atlanta"
+    KBOS:
+      usaf: "725090"
+      wban: "14739"
+      lat: 42.3643
+      lon: -71.0052
+      elev_m: 6
+      geography: coastal
+      name: "Boston Logan"
+
+windows:
+  train: { start: 2018, end: 2023 }
+  test:  { start: 2024, end: 2025 }
+
+# Risk thresholds (for label construction)
+thresholds:
+  visibility_km_lt: 3.0
+  wind_knots_gt: 25.0
+  horizon_hours: 2          # predict 1..2h ahead
+
+# NOAA ISD data types to pull
+# TMP (temp), DEW (dewpoint), VIS (visibility), WND (wind: dir/speed),
+# SLP (sea-level pressure), CIG (cloud ceiling), AA1 (precipitation)
+noaa_data_types: [TMP, DEW, VIS, WND, SLP, CIG, AA1]
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  figures_dir: reports/figures

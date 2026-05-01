@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/*.parquet
+data/raw/*.csv
+data/processed/*.parquet
+reports/figures/*.png
+.venv/
+venv/
+env/
+!reports/figures/phase4_vs_phase5_test_pr_auc.png
+!reports/figures/phase4_vs_phase5_loro_pr_auc.png
+!reports/figures/phase5_feature_importance_top20.png
+!reports/figures/phase4_vs_phase5_test_pr_auc.csv
+!reports/figures/phase4_vs_phase5_loro_pr_auc.csv
+!reports/figures/phase5_physics_feature_importance.csv
